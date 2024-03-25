@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  app:
+    build: ./app 
+    container_name: app
+    links:
+      - mysql
+    ports:
+      - "5000:80"
+    expose:
+      - "65432"
+
+  client_1:
+    build: ./client 
+    container_name: client1  
+
+  client_2:
+    build: ./client 
+    container_name: client2
+
+  mysql:
+    build: ./mysql
+    container_name: mysql
+    ports:
+      - "30000:3306"
+    restart: always
+
+
+
+
