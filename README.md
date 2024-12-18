@@ -3,7 +3,7 @@ A secure messaging service written in python
 
 ## Install and run
 1. Open terminal, `cd` to desired location for repo and <br>
-   run `git clone https://gitlab.csc.uvic.ca/courses/2021091/SENG360/teams/group-27/safe-talk.git`
+   run `git clone https://gitlab.csc.uvic.ccd safe-talka/courses/2021091/SENG360/teams/group-27/safe-talk.git`
 2. Once installed, cd to repo (`cd safe-talk`)
 3. Run `docker-compose up --build`
 4. Give time for all the containers to build and run
